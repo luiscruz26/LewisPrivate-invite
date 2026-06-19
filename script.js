@@ -1,0 +1,55 @@
+const params = new URLSearchParams(window.location.search);
+const name = params.get("name") || "Brother";
+
+const messages = {
+  Cesar: "Cesar, you've been my brother through every stage of life, from the good times to the difficult ones. No matter where life took us, you've always been family and someone I can count on. As Jordan and I begin this next chapter together, it would mean everything to have you standing beside me as my best man on one of the most important days of my life.",
+  Jon: "Jon, we've shared a lot of memories, laughs, and good times over the years, and you've been an important part of my life. It wouldn't feel right celebrating this day without you there, and I'd be honored to have you standing beside me as Jordan and I start this next chapter together.",
+  Jovanne: "Jovanne, your friendship has meant a lot to me through the years. Through good times, challenges, and everything in between, you've always been someone I respect and appreciate. Having you there on my wedding day would make it even more meaningful.",
+  Antonio: "Antonio, from the memories we've already made to the ones still ahead, you've been an important part of my life. As Jordan and I prepare for this next chapter, I'd be honored to have you standing beside me and sharing in one of the biggest moments of my life.",
+  Alberto: "Alberto, true friendships are built through time, trust, and showing up when it matters most. I'm grateful for the memories we've shared and the friendship we've built. It would mean a lot to have you standing beside me as Jordan and I celebrate our wedding day."
+};
+
+const text = document.getElementById("text");
+const nextBtn = document.getElementById("nextBtn");
+const choices = document.getElementById("choices");
+const accept = document.getElementById("accept");
+const decline = document.getElementById("decline");
+
+let step = 0;
+
+const intro = "A personal invitation awaits...";
+const personalMessage = messages[name] || messages.Cesar;
+const question = "Will you be my best man?";
+
+function showText(message) {
+  text.classList.remove("show");
+
+  setTimeout(() => {
+    text.textContent = message;
+    text.classList.add("show");
+  }, 250);
+}
+
+showText(intro);
+
+nextBtn.addEventListener("click", () => {
+  step++;
+
+  if (step === 1) {
+    showText(personalMessage);
+    nextBtn.textContent = "Continue";
+  } else if (step === 2) {
+    showText(question);
+    nextBtn.classList.add("hidden");
+    choices.classList.remove("hidden");
+  }
+});
+
+accept.addEventListener("click", () => {
+  showText("Mission accepted. Welcome to the wedding party.");
+  choices.classList.add("hidden");
+});
+
+decline.addEventListener("click", () => {
+  showText("Nah bro, that button doesn’t work. 😂");
+});
