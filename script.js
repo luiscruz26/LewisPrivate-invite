@@ -55,31 +55,36 @@ nextBtn.addEventListener("click", () => {
 
 accept.addEventListener("click", () => {
   text.innerHTML = `
-    <strong>Welcome to the Wedding Party</strong><br><br>
+    <div class="details-screen">
+      <h2>Welcome to the Wedding Party</h2>
 
-    Looking forward to celebrating with you.<br><br>
+      <p>Looking forward to celebrating with you.</p>
 
-    <strong>Date:</strong><br>
-    September 18, 2027<br><br>
+      <div class="detail-item">
+        <strong>Date</strong>
+        <span>September 18, 2027</span>
+      </div>
 
-    <strong>Venue:</strong><br>
-    Whispering Woods<br>
-    Harvard, IL<br><br>
+      <div class="detail-item">
+        <strong>Venue</strong>
+        <span>Whispering Woods<br>Harvard, IL</span>
+      </div>
 
-    <strong>Wedding Colors:</strong><br>
-    Sage Green, Terracotta, Ivory, and Gold<br><br>
+      <div class="detail-item">
+        <strong>Wedding Colors</strong>
+        <span>Sage Green • Terracotta • Ivory • Gold</span>
+      </div>
 
-    <button onclick="window.open('https://forms.gle/8hnj87pxLqhhnxXd9', '_blank')">
-      Submit Information
-    </button>
+      <button onclick="window.open('https://forms.gle/8hnj87pxLqhhnxXd9', '_blank')">
+        Submit Information
+      </button>
 
-    <button onclick="window.open('https://docs.google.com/spreadsheets/d/1upGMP3b4jQL3lAfNsWuc30Gsdbj4C-2yp9akQc3a-Po/edit?usp=sharing')">
-      View Wedding Party Contact List
-    </button>
+      <button onclick="window.open('https://docs.google.com/spreadsheets/d/1upGMP3b4jQL3lAfNsWuc30Gsdbj4C-2yp9akQc3a-Po/edit?usp=sharing', '_blank')">
+        View Wedding Party Contact List
+      </button>
 
-    <br><br>
-
-    <strong>Luis & Jordan</strong>
+      <p class="signature">Luis & Jordan</p>
+    </div>
   `;
 
   choices.classList.add("hidden");
