@@ -2,7 +2,7 @@ const params = new URLSearchParams(window.location.search);
 const name = params.get("name") || "Brother";
 
 const title = document.getElementById("title");
-title.textContent = name.toUpperCase();
+title.textContent = name;
 
 const messages = {
   Cesar: "Cesar, you've been my brother through every stage of life, from the good times to the difficult ones. No matter where life took us, you've always been family and someone I can count on. As Jordan and I begin this next chapter together, it would mean everything to have you standing beside me as my best man on one of the most important days of my life.",
