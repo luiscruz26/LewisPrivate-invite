@@ -39,3 +39,22 @@ h1 {
   color: black;
   font-weight: bold;
 }
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.start-screen h1 {
+  margin-bottom: 50px;
+}
+
+.start-screen #text {
+  display: none;
+}
+
+.start-screen #nextBtn {
+  width: 220px;
+  margin: 0 auto;
+}
