@@ -5,8 +5,8 @@ const title = document.getElementById("title");
 title.textContent = name;
 
 const messages = {
-  Cesar: "Cesar, you've been my brother through every stage of life, from the good times to the difficult ones. No matter where life took us, you've always been family and someone I can count on. As Jordan and I begin this next chapter together, it would mean everything to have you standing beside me as my best man on one of the most important days of my life.",
-
+  Cesar: "Cesar, my brother, I love you so much. You're the person I grew up with and the only person I've always had by my side growing up. Playing soccer, gaming, fighting each other, and going through life together. You'll always be my blood, and honestly, I don't know how life would've been if my parents never gave me a brother like you. You've seen Jordan and I grow together from the beginning, and now you're going to see us take the next step. It just wouldn't feel right doing it without you there.",
+  
   Jon: "Jon, primo, my man, we grew up together. We played sports, gamed together, and we still do every now and then. You're still an important person to me, man. I don't know if you know that, but now you do. I wish we could hang out more, have the conversations we used to have, and get back into games like DayZ or hitting trick shots like the old days. I want to celebrate my wedding with you standing by my side, alongside all the other amazing people I've chosen to be there with me.",
 
   Jovanne: "Jovanne, my boy, ever since The Springs you've always been a real one, man. Whether it's the carnes here at the crib, watching games, celebrating our birthdays, or just hanging out, you've always been there. That's why I like having you around. It just wouldn't feel like a real wedding if you weren't there. You've seen the young Louie grow with Jordan, and now you'll get to see us take the next step.",
